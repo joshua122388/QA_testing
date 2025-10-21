@@ -38,3 +38,11 @@ jobs:
         with:
           name: pytest-html-report
           path: reports/report.html
+
+      - name: Pull Request Creation Workflow
+        uses: offensive-vk/auto-pr-action@v8
+        with:
+          title: "Pull Request Generation before mergin code into main branch"
+          source_branch: "feature-branch"
+          destination_branch: "main"
+          debug: "true"

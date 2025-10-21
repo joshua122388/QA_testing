@@ -44,8 +44,7 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           title: "Automated Pull Request"
-          source_branch: "josh_branch"
-          destination_branch: "main"
+          destination-branch: "main"
           labels: "automation,enhancement"
           allow-empty: "false"
           draft: "false"
